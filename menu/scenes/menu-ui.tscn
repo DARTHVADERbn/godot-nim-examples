@@ -1,0 +1,72 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/menu-ui.gdns" type="Script" id=1]
+
+[node name="menu-ui" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="background" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.282353, 0.282353, 0.282353, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="play" type="Button" parent="."]
+anchor_left = 0.134263
+anchor_top = 0.25
+anchor_right = 0.329575
+anchor_bottom = 0.341667
+text = "Play"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="options" type="Button" parent="."]
+anchor_left = 0.134263
+anchor_top = 0.416667
+anchor_right = 0.329575
+anchor_bottom = 0.508333
+text = "Options"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="quit" type="Button" parent="."]
+anchor_left = 0.134263
+anchor_top = 0.583333
+anchor_right = 0.329575
+anchor_bottom = 0.675
+text = "Quit"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="options-panel" type="Panel" parent="."]
+visible = false
+anchor_left = 0.420898
+anchor_top = 0.198333
+anchor_right = 0.96582
+anchor_bottom = 0.735
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="options-panel"]
+anchor_left = 0.37481
+anchor_top = 0.394521
+anchor_right = 0.643627
+anchor_bottom = 0.602596
+margin_bottom = 1.52588e-05
+text = "There's no options :)"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
